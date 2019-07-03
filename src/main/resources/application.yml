@@ -1,0 +1,14 @@
+server:
+  port: 8888
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_test?useUnicode=true&characterEncoding=utf-8
+    username: xxxx
+    password: xxxx
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect # 设计数据库引擎为 InnoDB
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+    show-sql: true
